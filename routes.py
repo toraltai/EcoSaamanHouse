@@ -26,7 +26,7 @@ def upload():
                         url = f'https://{bucket}.s3.eu-north-1.amazonaws.com/{file.filename}')
             db.session.add(file)
             db.session.commit()
-        return redirect(request.url)
+    else: redirect(request.url)
 
     return render_template('index.html', image_files=image_files)
 
@@ -39,4 +39,5 @@ def after():
 
 @main.route('/test')
 def ping():
-    return get_bucket()
+    return render_template('test.html')
+    # return get_bucket()

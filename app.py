@@ -1,4 +1,5 @@
 from flask import Flask
+from flask_cors import CORS
 from utils.extensions import db,admin
 from flask_admin.contrib.sqla import ModelView
 from models import MyObject, File
@@ -6,6 +7,7 @@ from routes import main
 
 
 app = Flask(__name__)
+CORS(app)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///db.sqlite3"
 app.config["SECRET_KEY"] = "mysecret"
 db.init_app(app)
