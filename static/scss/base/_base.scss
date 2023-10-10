@@ -3,14 +3,16 @@
 
 
 body{
-    font-family: $font-main
+    background-color: grey;
+    font-family: $font-main,
 }
 
-a{
-    color: $white;
-    transition: color 0.2s ease-in;
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1140px;
+    display: flex;
+    justify-content: center;
 
-    &:hover{
-        color: red;
-    }
+    background-color: blanchedalmond;
 }

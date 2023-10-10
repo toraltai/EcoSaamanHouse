@@ -91,18 +91,33 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Raleway', sans-serif;
 */
 body {
+  background-color: grey;
   font-family: "Roboto", sans-serif;
 }
 
-a {
-  color: #fff;
-  transition: color 0.2s ease-in;
-}
-a:hover {
-  color: red;
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1140px;
+  display: flex;
+  justify-content: center;
+  background-color: blanchedalmond;
 }
 
 .header {
+  margin-top: 50px;
   min-height: 200px;
-  background-color: grey;
+}
+
+.header__picture {
+  width: 150px;
+  height: 150px;
+}
+
+.header__picture img {
+  border-radius: 50%;
+}
+
+.footer .container {
+  height: 100px;
 }/*# sourceMappingURL=main.css.map */

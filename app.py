@@ -25,3 +25,6 @@ def create_database_tables(app):
         db.create_all() 
 
 create_database_tables(app)
+
+if __name__ == '__main__':
+    app.run(debug=True)

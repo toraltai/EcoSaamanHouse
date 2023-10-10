@@ -1,4 +1,11 @@
-.header{
+.header {
+    margin-top: 50px;
     min-height: 200px;
-    background-color: grey;
+}
+.header__picture {
+    width: 150px;
+    height: 150px;
+}
+.header__picture img{
+    border-radius: 50%;
 }
